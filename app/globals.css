@@ -16,6 +16,41 @@
    @apply size-[50px] rounded-full bg-black flex justify-center items-center;
 }
 
+@utility section_container {
+   @apply px-6 py-10 max-w-7xl mx-auto;
+}
+
+@utility card_grid {
+   @apply grid md:grid-cols-3 sm:grid-cols-2 gap-5;
+}
+
+@utility card_grid-sm {
+   @apply grid sm:grid-cols-2 gap-5;
+}
+
+@utility startup-card {
+   @apply bg-white border-[5px] border-black py-6 px-5 rounded-[22px]  transition-all duration-500;
+}
+@utility startup-card_date {
+   @apply font-medium text-[16px] px-4 py-2 rounded-full;
+}
+
+@utility startup-card_desc {
+   @apply font-normal text-[16px] line-clamp-2 my-3 break-all;
+}
+
+@utility startup-card_img {
+   @apply w-full h-[164px] rounded-[10px] object-cover;
+}
+
+@utility startup-card_btn {
+   @apply rounded-full bg-black font-medium text-[16px] text-white px-5 py-3;
+}
+
+@utility startup-card_skeleton {
+   @apply w-full h-96 rounded-[22px] bg-zinc-400;
+}
+
 body {
    color: var(--foreground);
    background: var(--background);
